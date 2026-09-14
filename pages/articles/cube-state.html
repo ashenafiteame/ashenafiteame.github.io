@@ -1,1 +1,71 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Keep state separate from motion. — Ashenafi Gebreyesus</title><meta name="description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI."><meta name="theme-color" content="#101715"><meta property="og:title" content="Keep state separate from motion. — Ashenafi Gebreyesus"><meta property="og:description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI."><meta property="og:type" content="website"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/portfolio.css"><script src="../../assets/portfolio.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header><div class="shell nav"><a href="../../index.html" class="brand" aria-label="Ashenafi home">ag<span>.</span></a><nav aria-label="Main navigation"><a class="" href="../../index.html">Home</a><a class="" href="../../pages/projects.html">Work</a><a class="" href="../../pages/about.html">About</a><a class="active" href="../../pages/articles.html" aria-current="page">Notes</a></nav><a class="nav-contact" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Let’s connect <span>↗</span></a></div></header><main id="main" class="shell"><section class="page-intro"><a class="back-link" href="../articles.html">← All notes</a><p class="eyebrow">BROWSER / ENGINEERING</p><h1>Keep state separate from motion.</h1><p>A look at how Cubiq separates cube logic from its animated interface.</p></section><article class="prose"><h2>Two representations, one cube</h2><p>Cubiq keeps a logical cube made of integer positions and sticker directions. Separately, CSS transforms draw the cube and animate face turns.</p><h2>Finish the move exactly</h2><p>A turn first animates a layer. Once the animation finishes, the application updates the logical positions and renders again from that state. Subsequent moves use the committed model.</p><h2>Test the properties</h2><p>A face turned four times should return to its original state. A move followed by its inverse should do the same. The model tests also check sticker counts and scramble/reverse sequences.</p><h2>Be clear about the solver</h2><p>Cubiq records moves and solves by applying their inverses in reverse order. This supports states reached inside the game. It does not calculate an optimal solution or solve a physical cube entered by color.</p></article><section class="contact"><p class="eyebrow">LET’S BUILD SOMETHING USEFUL</p><h2>Good systems start with<br/>a good conversation<span>.</span></h2><a class="button light" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a><p>Backend engineering · Applied AI · Cloud systems</p></section></main><footer class="shell"><a class="brand" href="../../index.html">ag<span>.</span></a><p>Thoughtfully built. Always evolving.</p><div><a href="https://github.com/ashenafiteame" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>© <span id="year">2026</span> Ashenafi Gebreyesus</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keep state separate from motion. — Ashenafi Gebreyesus</title>
+<meta name="description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI.">
+<meta name="theme-color" content="#101715">
+<meta property="og:title" content="Keep state separate from motion. — Ashenafi Gebreyesus">
+<meta property="og:description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/portfolio.css?v=2">
+<script src="../../assets/portfolio.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="shell nav">
+<a href="../../index.html" class="brand" aria-label="Ashenafi home">Ashenafi<span> G.</span>
+</a>
+<nav aria-label="Main navigation">
+<a class="" href="../../index.html">Home</a>
+<a class="" href="../../pages/projects.html">Projects</a>
+<a class="" href="../../pages/about.html">About</a>
+<a class="active" href="../../pages/articles.html" aria-current="page">Articles</a>
+<a href="../../CV/GEBREYESUSAshenafiv2.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span>
+</a>
+</nav>
+<a class="nav-contact" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span>
+</a>
+</div>
+</header>
+<main id="main" class="shell">
+<section class="page-intro">
+<a class="back-link" href="../articles.html">← All notes</a>
+<p class="eyebrow">BROWSER / ENGINEERING</p>
+<h1>Keep state separate from motion.</h1>
+<p>A look at how Cubiq separates cube logic from its animated interface.</p>
+</section>
+<article class="prose">
+<h2>Two representations, one cube</h2>
+<p>Cubiq keeps a logical cube made of integer positions and sticker directions. Separately, CSS transforms draw the cube and animate face turns.</p>
+<h2>Finish the move exactly</h2>
+<p>A turn first animates a layer. Once the animation finishes, the application updates the logical positions and renders again from that state. Subsequent moves use the committed model.</p>
+<h2>Test the properties</h2>
+<p>A face turned four times should return to its original state. A move followed by its inverse should do the same. The model tests also check sticker counts and scramble/reverse sequences.</p>
+<h2>Be clear about the solver</h2>
+<p>Cubiq records moves and solves by applying their inverses in reverse order. This supports states reached inside the game. It does not calculate an optimal solution or solve a physical cube entered by color.</p>
+</article>
+<section class="contact">
+<p class="eyebrow">CONTACT</p>
+<h2>Let’s connect.</h2>
+<a class="button light" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span>
+</a>
+<p>Backend engineering · Applied AI · Cloud systems</p>
+</section>
+</main>
+<footer class="shell">
+<a class="brand" href="../../index.html">Ashenafi<span> G.</span>
+</a>
+<p>Backend engineering & applied AI</p>
+<div>
+<a href="https://github.com/ashenafiteame" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+<span>© <span id="year">2026</span> Ashenafi Gebreyesus</span>
+</div>
+</footer>
+</body>
+</html>

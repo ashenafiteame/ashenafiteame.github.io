@@ -1,1 +1,71 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Start with the boundary. — Ashenafi Gebreyesus</title><meta name="description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI."><meta name="theme-color" content="#101715"><meta property="og:title" content="Start with the boundary. — Ashenafi Gebreyesus"><meta property="og:description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI."><meta property="og:type" content="website"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/portfolio.css"><script src="../../assets/portfolio.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header><div class="shell nav"><a href="../../index.html" class="brand" aria-label="Ashenafi home">ag<span>.</span></a><nav aria-label="Main navigation"><a class="" href="../../index.html">Home</a><a class="" href="../../pages/projects.html">Work</a><a class="" href="../../pages/about.html">About</a><a class="active" href="../../pages/articles.html" aria-current="page">Notes</a></nav><a class="nav-contact" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Let’s connect <span>↗</span></a></div></header><main id="main" class="shell"><section class="page-intro"><a class="back-link" href="../articles.html">← All notes</a><p class="eyebrow">BACKEND / DESIGN</p><h1>Start with the boundary.</h1><p>A practical checklist for thinking about service responsibilities before implementation.</p></section><article class="prose"><h2>Begin with a responsibility</h2><p>Before dividing an application into services, write down what each part is responsible for. In a shopping flow, catalog browsing, cart state, and checkout are useful starting points for that discussion.</p><h2>Ask about the handoff</h2><p>For each boundary, ask what information crosses it, what a caller needs back, and what should happen if the request cannot finish. A small, explicit contract makes the conversation concrete.</p><h2>Include the data</h2><p>Record which part owns each piece of data and which operations need to stay together. This checklist is a design prompt, not a rule that every feature needs its own microservice.</p><h2>A useful starting checklist</h2><p>What is the responsibility? Who calls it? What data does it own? What happens on failure? How will the behavior be tested? Answer those before adding more moving parts.</p></article><section class="contact"><p class="eyebrow">LET’S BUILD SOMETHING USEFUL</p><h2>Good systems start with<br/>a good conversation<span>.</span></h2><a class="button light" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a><p>Backend engineering · Applied AI · Cloud systems</p></section></main><footer class="shell"><a class="brand" href="../../index.html">ag<span>.</span></a><p>Thoughtfully built. Always evolving.</p><div><a href="https://github.com/ashenafiteame" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><span>© <span id="year">2026</span> Ashenafi Gebreyesus</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start with the boundary. — Ashenafi Gebreyesus</title>
+<meta name="description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI.">
+<meta name="theme-color" content="#101715">
+<meta property="og:title" content="Start with the boundary. — Ashenafi Gebreyesus">
+<meta property="og:description" content="Ashenafi Gebreyesus: backend engineering, cloud services, and applied AI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/portfolio.css?v=2">
+<script src="../../assets/portfolio.js" defer>
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="shell nav">
+<a href="../../index.html" class="brand" aria-label="Ashenafi home">Ashenafi<span> G.</span>
+</a>
+<nav aria-label="Main navigation">
+<a class="" href="../../index.html">Home</a>
+<a class="" href="../../pages/projects.html">Projects</a>
+<a class="" href="../../pages/about.html">About</a>
+<a class="active" href="../../pages/articles.html" aria-current="page">Articles</a>
+<a href="../../CV/GEBREYESUSAshenafiv2.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span>
+</a>
+</nav>
+<a class="nav-contact" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span>
+</a>
+</div>
+</header>
+<main id="main" class="shell">
+<section class="page-intro">
+<a class="back-link" href="../articles.html">← All notes</a>
+<p class="eyebrow">BACKEND / DESIGN</p>
+<h1>Start with the boundary.</h1>
+<p>A practical checklist for thinking about service responsibilities before implementation.</p>
+</section>
+<article class="prose">
+<h2>Begin with a responsibility</h2>
+<p>Before dividing an application into services, write down what each part is responsible for. In a shopping flow, catalog browsing, cart state, and checkout are useful starting points for that discussion.</p>
+<h2>Ask about the handoff</h2>
+<p>For each boundary, ask what information crosses it, what a caller needs back, and what should happen if the request cannot finish. A small, explicit contract makes the conversation concrete.</p>
+<h2>Include the data</h2>
+<p>Record which part owns each piece of data and which operations need to stay together. This checklist is a design prompt, not a rule that every feature needs its own microservice.</p>
+<h2>A useful starting checklist</h2>
+<p>What is the responsibility? Who calls it? What data does it own? What happens on failure? How will the behavior be tested? Answer those before adding more moving parts.</p>
+</article>
+<section class="contact">
+<p class="eyebrow">CONTACT</p>
+<h2>Let’s connect.</h2>
+<a class="button light" href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span>
+</a>
+<p>Backend engineering · Applied AI · Cloud systems</p>
+</section>
+</main>
+<footer class="shell">
+<a class="brand" href="../../index.html">Ashenafi<span> G.</span>
+</a>
+<p>Backend engineering & applied AI</p>
+<div>
+<a href="https://github.com/ashenafiteame" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/ashenafi-gebreyesus" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+<span>© <span id="year">2026</span> Ashenafi Gebreyesus</span>
+</div>
+</footer>
+</body>
+</html>
