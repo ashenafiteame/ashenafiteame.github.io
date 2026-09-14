@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A little focus. A few turns. A beautifully simple 3D cube playground."><title>Cubiq — Find your flow</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><a class="brand" href="index.html"><span class="brand-mark">▦</span> cubiq<span class="brand-dot">.</span></a><span class="header-note">A SMALL PUZZLE. ENDLESS POSSIBILITIES.</span><span class="edition">3 × 3 <span>CLASSIC</span></span></header>
+<main>
+<section class="intro"><div class="eyebrow"><span></span> THE CUBE PLAYGROUND</div><h1>A few turns.<br>A little <em>flow.</em></h1><p>Mix it up. Find your way back.<br>Make a little order out of the chaos.</p></section>
+<div class="workspace">
+<section class="playground" aria-label="Interactive cube">
+<div class="stage-top"><span class="status" id="status" role="status">● Solved</span><span class="stage-label">01 / CLASSIC CUBE</span></div>
+<div id="viewport" class="viewport" aria-label="Drag to rotate the cube view" tabindex="0"><div class="cube-shadow"></div><div id="camera" class="camera"><div id="cube" class="cube"></div></div></div>
+<div class="view-hint"><span>↔</span> Drag to look around <span class="hint-dot">·</span> <button id="view-reset">Reset view</button></div>
+<div class="stage-bottom"><div><span class="metric-label">YOUR MOVES</span><strong id="move-count">00</strong></div><div class="color-key"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="stage-caption">ONE TURN AT A TIME.</span></div>
+</section>
+<aside class="controls">
+<div class="panel-heading"><div><span class="eyebrow">TAKE IT FOR A SPIN</span><h2>Your next move</h2></div><span class="control-icon">↗</span></div>
+<div class="action-row"><button id="scramble" class="button primary">⤨ <span>Scramble</span></button><button id="solve" class="button solve">✧ <span>Solve</span></button></div>
+<p class="solver-note">Solve retraces your moves back to the start.</p>
+<div class="divider"></div>
+<div class="section-heading"><h3>Turn a face</h3><span>↻ &nbsp; / &nbsp; ↺</span></div>
+<div id="face-controls" class="face-controls"></div>
+<div class="utility-row"><button id="undo">↶ &nbsp; Undo move</button><button id="reset">↺ &nbsp; Start fresh</button></div>
+<div class="keyboard-note"><span class="keyboard-icon">⌨</span><p>Use <b>U D L R F B</b> on your keyboard.<br>Hold <kbd>Shift</kbd> for a counterclockwise turn.</p></div>
+</aside>
+</div>
+<section class="history"><div class="history-label"><span>↳</span><h3>THE JOURNEY</h3></div><div id="recent-moves" class="recent-moves" aria-label="Recent moves"><span class="empty-history">A fresh start. Where will you go?</span></div><span id="history-total" class="history-total">0 turns</span></section>
+<footer><span>Less scrolling. More solving.</span><span>BUILT FOR A MOMENT OF FOCUS <span class="footer-star">✳</span></span></footer>
+</main><script src="app.js"></script>
+</body></html>
